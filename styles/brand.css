@@ -1,31 +1,45 @@
 /*
- * brand.css — Brand design tokens extracted from source site
- * Source: https://main--heineken--adobe-demopoc.aem.live/overview
+ * brand.css — Albert Heijn look & feel
+ * Tokens extracted from https://www.ah.nl/bonus
+ *   AH blue   #00ade6 (brand / primary CTA)
+ *   AH orange #ff7900 (accent / active state / badges)
+ *   Text      #26313a
  */
 
 :root {
-  /* fonts */
-  --heading-font-family: adobe-clean, adobe-clean-fallback, arial, helvetica;
-  --body-font-family: adobe-clean, adobe-clean-fallback, arial, helvetica;
+  /* fonts — Hamburg Serial is AH-proprietary; use a close geometric sans fallback */
+  --heading-font-family: adobe-clean, "Segoe UI", arial, helvetica, sans-serif;
+  --body-font-family: adobe-clean, "Segoe UI", arial, helvetica, sans-serif;
   --fixed-font-family: adobe-clean, "Adobe Clean", menlo, consolas, "Liberation Mono", monospace;
 
   /* colors */
-  --background-color: white;
-  --text-color: black;
-  --heading-color: #2e3d52;
-  --link-color: #000;
-  --link-hover-color: #136ff6;
-  --light-color: #eee;
-  --dark-color: #ccc;
+  --background-color: #fff;
+  --text-color: #26313a;
+  --heading-color: #26313a;
+
+  /* AH brand palette */
+  --ah-blue: #00ade6;
+  --ah-blue-dark: #0098c7;
+  --ah-orange: #ff7900;
+  --ah-orange-dark: #e56d00;
+  --ah-green-tint: #e5f4e3;
+
+  /* links use the AH blue */
+  --link-color: #0071b3;
+  --link-hover-color: #00ade6;
+
+  /* section tints */
+  --light-color: #f2f7f9;
+  --dark-color: #26313a;
 
   /* spacing */
   --nav-height: 64px;
 
-  /* heading sizes */
+  /* heading sizes (AH: bold, slightly larger) */
   --heading-size-xxl: 32px;
   --heading-size-xl: 24px;
-  --heading-size-l: 18.72px;
-  --heading-size-m: 16px;
-  --heading-size-s: 13.28px;
-  --heading-size-xs: 10.72px;
+  --heading-size-l: 20px;
+  --heading-size-m: 18px;
+  --heading-size-s: 16px;
+  --heading-size-xs: 14px;
 }

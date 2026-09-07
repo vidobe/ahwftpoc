@@ -13,16 +13,16 @@
  */
 
 :root {
-  /* colors (brand tokens defined in brand.css) */
-  --background-color: white;
-  --light-color: #eee;
-  --dark-color: #ccc;
-  --text-color: black;
-  --link-color: #000;
-  --link-hover-color: #136ff6;
+  /* colors (AH brand tokens defined in brand.css) */
+  --background-color: #fff;
+  --light-color: #f2f7f9;
+  --dark-color: #26313a;
+  --text-color: #26313a;
+  --link-color: #0071b3;
+  --link-hover-color: #00ade6;
 
-  /* fonts (brand tokens defined in brand.css) */
-  --body-font-family: adobe-clean, adobe-clean-fallback, arial, helvetica;
+  /* fonts (Hamburg Serial is AH-proprietary; close sans fallback) */
+  --body-font-family: adobe-clean, "Segoe UI", arial, helvetica, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: adobe-clean, "Adobe Clean", menlo, consolas, "Liberation Mono", monospace;
 
@@ -80,8 +80,8 @@ h6 {
   margin-top: 1em;
   margin-bottom: 0.5em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: 800;
+  line-height: 1.2;
   color: var(--heading-color);
   scroll-margin: calc(var(--nav-height) + 1em);
 }
@@ -217,18 +217,18 @@ button.button:disabled {
 
 a.button.primary,
 button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-  color: var(--background-color);
+  border-color: var(--ah-blue);
+  background-color: var(--ah-blue);
+  color: #fff;
 }
 
 a.button.primary:hover,
 a.button.primary:focus-visible,
 button.button.primary:hover,
 button.button.primary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  border-color: var(--ah-blue-dark);
+  background-color: var(--ah-blue-dark);
+  color: #fff;
 }
 
 a.button.primary[aria-disabled="true"],
@@ -244,18 +244,18 @@ button.button.primary:disabled:focus-visible {
 
 a.button.secondary,
 button.button.secondary {
-  border-color: var(--text-color);
+  border-color: var(--ah-blue);
   background-color: transparent;
-  color: var(--text-color);
+  color: var(--ah-blue-dark);
 }
 
 a.button.secondary:hover,
 a.button.secondary:focus-visible,
 button.button.secondary:hover,
 button.button.secondary:focus-visible {
-  border-color: var(--dark-color);
+  border-color: var(--ah-blue-dark);
   background-color: var(--light-color);
-  color: var(--dark-color);
+  color: var(--ah-blue-dark);
 }
 
 a.button.secondary[aria-disabled="true"],
@@ -269,20 +269,21 @@ button.button.secondary:disabled:focus-visible {
   color: var(--dark-color);
 }
 
-/* high-impact call-to-action */
+/* high-impact call-to-action — AH orange pill */
 a.button.accent,
 button.button.accent {
-  border-color: var(--link-color);
-  background-color: var(--link-color);
-  color: var(--background-color);
+  border-color: var(--ah-orange);
+  background-color: var(--ah-orange);
+  color: #fff;
 }
 
 a.button.accent:hover,
 a.button.accent:focus-visible,
 button.button.accent:hover,
 button.button.accent:focus-visible {
-  border-color: var(--link-hover-color);
-  background-color: var(--link-hover-color);
+  border-color: var(--ah-orange-dark);
+  background-color: var(--ah-orange-dark);
+  color: #fff;
 }
 
 a.button.accent[aria-disabled="true"],

@@ -1,12 +1,12 @@
 .note {
-  background-color: #d9edf7;
-  color: #323232;
-  border-color: #a8d4eb;
-  border-style: solid;
-  border-width: 1px;
+  background-color: #e6f7fd;
+  color: #26313a;
+  border: 1px solid #b3e6f7;
+  border-left: 4px solid var(--ah-blue, #00ade6);
+  border-radius: 12px;
   margin-top: 1em;
   margin-bottom: 1em;
-  padding: 10px;
+  padding: 16px 20px;
   font-size: 14px;
   line-height: 1.5em;
 }

@@ -56,15 +56,15 @@
 }
 
 .left-navigation h3:hover {
-  background-color: rgb(232 232 232);
+  background-color: #eef7fb;
   cursor: pointer;
 }
 
 .left-navigation li a:hover,
 .left-navigation p:hover,
 .nav-heading p a:hover {
-  background-color: rgb(232 232 232);
-  border-radius: 5px;
+  background-color: #eef7fb;
+  border-radius: 20px;
 }
 
 .nav-heading p a:hover {
@@ -78,10 +78,17 @@
   display: none;
 }
 
+/* active item — AH orange pill */
 .left-navigation li .active {
-  background-color: #e0eefc;
-  color: #2166ae;
-  border-radius: 5px;
+  background-color: var(--ah-orange);
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.left-navigation li a.active:hover {
+  background-color: var(--ah-orange-dark);
+  color: #fff;
 }
 
 .left-navigation img {
