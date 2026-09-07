@@ -1,0 +1,133 @@
+.left-navigation-wrapper {
+  flex: 0 0 auto;
+  min-width: 350px;
+  max-width: 400px;
+  width: auto;
+  background: #f8f8f8;
+  border-right: 1px solid lightgray;
+}
+
+.left-navigation {
+  position: sticky;
+  top: 30px;
+  margin-left: 30px;
+  padding-right: 40px;
+  overflow: hidden auto;
+  height: 90vh;
+}
+
+.left-navigation h4 {
+  color: rgb(75 75 75);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.left-navigation p,
+.left-navigation li,
+.left-navigation li a,
+.nav-heading p a,
+.left-navigation h3 {
+  color: rgb(75 75 75);
+  cursor: pointer;
+  display: block;
+  float: none;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  padding: 5px 10px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+}
+
+.left-navigation li a,
+.nav-heading p a {
+  width: 100%;
+  color: #4b5563;
+}
+
+.left-navigation p,
+.left-navigation h3 {
+  position: relative;
+  padding-left: 0;
+  left: 18px;
+}
+
+.left-navigation h3:hover {
+  background-color: rgb(232 232 232);
+  cursor: pointer;
+}
+
+.left-navigation li a:hover,
+.left-navigation p:hover,
+.nav-heading p a:hover {
+  background-color: rgb(232 232 232);
+  border-radius: 5px;
+}
+
+.nav-heading p a:hover {
+  border: none;
+  border-color: transparent;
+  color: #4b5563;
+}
+
+.nav-heading h3 ~ * {
+  margin-left: 30px;
+  display: none;
+}
+
+.left-navigation li .active {
+  background-color: #e0eefc;
+  color: #2166ae;
+  border-radius: 5px;
+}
+
+.left-navigation img {
+  position: relative;
+  top: 6px;
+  right: 23px;
+}
+
+.nav-heading ul {
+  display: none;
+  transition: display 0.3s ease;
+}
+
+.left-navigation > div > ul {
+  padding-left: 0;
+  margin-left: 20px;
+}
+
+.nav-heading .button-container {
+  padding-left: 15px;
+}
+
+@media (width <= 900px) {
+  .left-navigation {
+    padding-right: 0;
+  }
+
+  .left-navigation-wrapper {
+    min-width: 0;
+    width: 0;
+  }
+
+  .left-navigation-wrapper.overlay {
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    min-width: 350px !important;
+    max-width: 400px;
+    height: 100%;
+    overflow: initial;
+    display: block;
+    background: white;
+    transition: 0.5s;
+  }
+
+  .left-navigation-wrapper > .left-navigation > div {
+    max-width: 250px;
+  }
+}

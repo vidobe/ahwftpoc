@@ -10,6 +10,8 @@ import {
   loadSections,
   loadCSS,
   buildBlock,
+  decorateBlock,
+  loadBlock,
 } from './aem.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
@@ -143,6 +145,23 @@ function decorateButtons(main) {
 }
 
 /**
+ * Builds the left-navigation rail as an aside before the first section.
+ * The rail's content comes from a shared nav document loaded at runtime by the
+ * left-navigation block, so it is authored once and shared across all pages.
+ * @param {Element} main The main element
+ * @returns {Promise|undefined} resolves when the nav block has loaded
+ */
+export function setUpLeftNav(main) {
+  if (!main || main.querySelector('.left-navigation')) return undefined;
+  const aside = document.createElement('aside');
+  const leftNav = buildBlock('left-navigation', '');
+  aside.append(leftNav);
+  main.insertBefore(aside, main.querySelector('.section'));
+  decorateBlock(leftNav);
+  return loadBlock(leftNav);
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -167,6 +186,7 @@ async function loadEager(doc) {
     decorateMain(main);
     document.body.classList.add('appear');
     await loadSection(main.querySelector('.section'), waitForFirstImage);
+    setUpLeftNav(main);
   }
 
   try {

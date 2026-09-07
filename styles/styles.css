@@ -328,6 +328,23 @@ main > .section:first-of-type {
   margin-top: 0;
 }
 
+/* two-column doc layout: left-navigation rail + content */
+main:has(.left-navigation-wrapper) {
+  display: flex;
+  align-items: flex-start;
+}
+
+main:has(.left-navigation-wrapper) > .section {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* in the two-column layout, keep content left-aligned within its column */
+main:has(.left-navigation-wrapper) > .section > div {
+  margin-left: 0;
+  max-width: 900px;
+}
+
 @media (width >= 900px) {
   main > .section > div {
     padding: 0 32px;
