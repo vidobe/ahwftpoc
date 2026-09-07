@@ -346,7 +346,8 @@ main:has(.left-navigation-wrapper) > .section {
 /* in the two-column layout, keep content left-aligned within its column */
 main:has(.left-navigation-wrapper) > .section > div {
   margin-left: 0;
-  max-width: 900px;
+  max-width: 920px;
+  padding: 0 48px;
 }
 
 @media (width >= 900px) {

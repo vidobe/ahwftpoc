@@ -45,7 +45,7 @@ header nav[aria-expanded='true'] {
     max-width: none;
     margin: 0;
     height: var(--nav-height);
-    padding: 0 30px;
+    padding: 0 48px;
   }
 
   header nav[aria-expanded='true'] {
@@ -297,23 +297,33 @@ header nav .nav-tools p {
 header nav .nav-tools .icon-search {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: auto;
-  min-width: 220px;
-  height: 40px;
-  padding: 0 16px;
-  background-color: #f0f0f0;
-  border: 1px solid #dcdcdc;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.15s ease;
+  justify-content: flex-start;
+  gap: 10px;
+  width: clamp(240px, 26vw, 420px);
+  height: 44px;
+  padding: 0 18px;
+  background-color: #f2f2f2;
+  border: 1px solid #d4d4d4;
+  border-radius: 22px;
+  cursor: text;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 header nav .nav-tools .icon-search:hover {
-  background-color: #e6e6e6;
+  background-color: #ececec;
+  border-color: #c4c4c4;
 }
 
 header nav .nav-tools .icon-search img {
   width: 18px;
   height: 18px;
+  flex: 0 0 auto;
+}
+
+/* placeholder text inside the search pill (no authored input to bind to) */
+header nav .nav-tools .icon-search::after {
+  content: 'Search the guide';
+  color: #6b7280;
+  font-size: var(--body-font-size-s);
+  white-space: nowrap;
 }
