@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/overview",
+  "path": "overview",
+  "timestamp": "2026-09-07T07:35:30.053Z",
+  "title": "Overview",
+  "template": "overview",
+  "blocks": [
+    "title",
+    "tip",
+    "note"
+  ]
+}

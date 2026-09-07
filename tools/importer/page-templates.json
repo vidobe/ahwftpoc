@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "overview",
+      "urls": [
+        "https://main--heineken--adobe-demopoc.aem.live/overview"
+      ],
+      "representativeUrl": "https://main--heineken--adobe-demopoc.aem.live/overview",
+      "description": "AEM Edge Delivery documentation guide page: page heading, intro title block, body copy with feature list, Quick Tip callout, Prerequisites, and a Note callout.",
+      "urlPattern": "/*",
+      "blocks": [
+        {
+          "name": "title",
+          "instances": [
+            ".title.heading-3"
+          ]
+        },
+        {
+          "name": "tip",
+          "instances": [
+            ".tip"
+          ]
+        },
+        {
+          "name": "note",
+          "instances": [
+            ".note"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Overview content",
+          "selector": "body > main",
+          "style": null,
+          "blocks": [
+            "title",
+            "tip",
+            "note"
+          ],
+          "defaultContent": [
+            "h1#overview",
+            "ul",
+            "h3#prerequisites"
+          ]
+        }
+      ]
+    }
+  ]
+}

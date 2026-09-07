@@ -1,0 +1,40 @@
+.note {
+  background-color: #d9edf7;
+  color: #323232;
+  border-color: #a8d4eb;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.note p {
+  margin: 0;
+}
+
+/*
+ * Icon sizing/positioning.
+ * In this migrated content the icon is a bare <picture><img> (no .icon span),
+ * so we target the picture/img inside the label row directly to prevent the
+ * SVG from filling the box. (The source's <span class="icon icon-note"> form
+ * is already handled by the global .icon / .icon img rules in styles.css.)
+ */
+.note > div:first-child picture {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  top: 6px;
+  right: 10px;
+  margin-left: 10px;
+  margin-bottom: 17px;
+  vertical-align: baseline;
+}
+
+.note > div:first-child picture img {
+  width: 24px;
+  height: 24px;
+}

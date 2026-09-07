@@ -1,0 +1,38 @@
+{
+  "variantName": "note",
+  "baseBlock": "note",
+  "version": "1.0.0",
+  "created": "2026-09-07T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://main--heineken--adobe-demopoc.aem.live/overview",
+    "originPage": "documentation guide - overview chapter",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "accent",
+    "density": "compact",
+    "purpose": "callout",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + label + body text",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "informational note callouts in documentation",
+      "highlighted supplementary information with a note icon"
+    ],
+    "notSuitableFor": [
+      "primary body copy",
+      "call-to-action driven content"
+    ]
+  },
+  "notes": "Ported verbatim from source EDS site (blocks/note). Light-blue bordered info callout with note icon. CSS-only presentational block; JS is intentionally empty (no decoration). Row 1 = icon + label ('NOTE'); row 2 = body text.",
+  "usage": {
+    "pagesUsing": ["/overview"],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-07T00:00:00.000Z"
+  }
+}

@@ -1,3 +1,5 @@
+@import url('brand.css');
+
 /*
  * Copyright 2020 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -11,63 +13,34 @@
  */
 
 :root {
-  /* colors */
+  /* colors (brand tokens defined in brand.css) */
   --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --light-color: #eee;
+  --dark-color: #ccc;
+  --text-color: black;
+  --link-color: #000;
+  --link-hover-color: #136ff6;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  /* fonts (brand tokens defined in brand.css) */
+  --body-font-family: adobe-clean, adobe-clean-fallback, arial, helvetica;
+  --heading-font-family: var(--body-font-family);
+  --fixed-font-family: adobe-clean, "Adobe Clean", menlo, consolas, "Liberation Mono", monospace;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-font-size-xs: 12px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  --heading-font-size-xxl: 32px;
+  --heading-font-size-xl: 24px;
+  --heading-font-size-l: 18.72px;
+  --heading-font-size-m: 16px;
+  --heading-font-size-s: 13.28px;
+  --heading-font-size-xs: 10.72px;
 
   /* nav height */
   --nav-height: 64px;
-}
-
-/* fallback fonts */
-@font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
-}
-
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
-}
-
-@media (width >= 900px) {
-  :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
-  }
 }
 
 body {
@@ -104,12 +77,13 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
   font-family: var(--heading-font-family);
   font-weight: 600;
   line-height: 1.25;
-  scroll-margin: 40px;
+  color: var(--heading-color);
+  scroll-margin: calc(var(--nav-height) + 1em);
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
@@ -155,14 +129,58 @@ button {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
-  text-decoration: none;
+  color: #4b5563;
+  text-decoration: underline;
   overflow-wrap: break-word;
 }
 
 a:hover {
   color: var(--link-hover-color);
   text-decoration: underline;
+}
+
+/* anchor links for headings */
+h1 .anchor-link,
+h2 .anchor-link,
+h3 .anchor-link,
+h4 .anchor-link,
+h5 .anchor-link,
+h6 .anchor-link {
+  text-decoration: none !important;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+h1 .anchor-link:hover,
+h2 .anchor-link:hover,
+h3 .anchor-link:hover,
+h4 .anchor-link:hover,
+h5 .anchor-link:hover,
+h6 .anchor-link:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* colorful highlight effect for anchor links */
+.link-highlight-colorful-effect {
+  position: relative;
+}
+
+.link-highlight-colorful-effect::before {
+  content: '';
+  position: absolute;
+  left: -0.5em;
+  top: 0;
+  bottom: 0;
+  width: 0.25em;
+  background: linear-gradient(to bottom, #4a90e2, #50c878, #f39c12);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  border-radius: 2px;
+}
+
+.link-highlight-colorful-effect:hover::before {
+  opacity: 1;
 }
 
 /* buttons */

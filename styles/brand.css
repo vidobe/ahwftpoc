@@ -1,0 +1,31 @@
+/*
+ * brand.css — Brand design tokens extracted from source site
+ * Source: https://main--heineken--adobe-demopoc.aem.live/overview
+ */
+
+:root {
+  /* fonts */
+  --heading-font-family: adobe-clean, adobe-clean-fallback, arial, helvetica;
+  --body-font-family: adobe-clean, adobe-clean-fallback, arial, helvetica;
+  --fixed-font-family: adobe-clean, "Adobe Clean", menlo, consolas, "Liberation Mono", monospace;
+
+  /* colors */
+  --background-color: white;
+  --text-color: black;
+  --heading-color: #2e3d52;
+  --link-color: #000;
+  --link-hover-color: #136ff6;
+  --light-color: #eee;
+  --dark-color: #ccc;
+
+  /* spacing */
+  --nav-height: 64px;
+
+  /* heading sizes */
+  --heading-size-xxl: 32px;
+  --heading-size-xl: 24px;
+  --heading-size-l: 18.72px;
+  --heading-size-m: 16px;
+  --heading-size-s: 13.28px;
+  --heading-size-xs: 10.72px;
+}

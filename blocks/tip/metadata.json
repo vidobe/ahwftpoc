@@ -1,0 +1,38 @@
+{
+  "variantName": "tip",
+  "baseBlock": "tip",
+  "version": "1.0.0",
+  "created": "2026-09-07T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://main--heineken--adobe-demopoc.aem.live/overview",
+    "originPage": "documentation guide - overview chapter",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "accent",
+    "density": "compact",
+    "purpose": "callout",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + label + body text",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "quick tip / helpful hint callouts in documentation",
+      "highlighted advisory content with a bulb icon"
+    ],
+    "notSuitableFor": [
+      "critical warnings (use a distinct alert style)",
+      "long-form body content"
+    ]
+  },
+  "notes": "Ported verbatim from source EDS site (blocks/tip). Peach/orange bordered callout with bulb icon. CSS-only presentational block; JS is intentionally empty (no decoration). Row 1 = icon + label ('Quick Tip'); row 2 = body text.",
+  "usage": {
+    "pagesUsing": ["/overview"],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-07T00:00:00.000Z"
+  }
+}

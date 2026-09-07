@@ -1,0 +1,11 @@
+{
+  "type": "da",
+  "sites": {
+    "ahwftpoc": {
+      "previewOrg": "vidobe",
+      "previewSite": "ahwftpoc",
+      "contentHostUrl": "https://content.da.live/vidobe/ahwftpoc/",
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+    }
+  }
+}

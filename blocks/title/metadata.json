@@ -1,0 +1,39 @@
+{
+  "variantName": "title",
+  "baseBlock": "title",
+  "version": "1.0.0",
+  "created": "2026-09-07T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://main--heineken--adobe-demopoc.aem.live/overview",
+    "originPage": "documentation guide - overview chapter",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "heading",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + optional paragraph",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "documentation intro headings",
+      "controlling heading display size via heading-1..heading-6 variants",
+      "prominent section titles with supporting text"
+    ],
+    "notSuitableFor": [
+      "hero banners with background images",
+      "repeating card/list content"
+    ]
+  },
+  "notes": "Ported verbatim from source EDS site (blocks/title). CSS-only presentational block; JS is intentionally empty (no decoration). Variant classes heading-1..heading-6 set heading font-size. Authored content on /overview uses the 'heading-3' variant.",
+  "usage": {
+    "pagesUsing": ["/overview"],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-07T00:00:00.000Z"
+  }
+}
