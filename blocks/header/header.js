@@ -137,6 +137,21 @@ export default async function decorate(block) {
     brandLink.closest('.button-container').className = '';
   }
 
+  // upgrade the search tool into a real, focusable search input
+  const navTools = nav.querySelector('.nav-tools');
+  if (navTools) {
+    const searchIcon = navTools.querySelector('.icon-search, .icon');
+    const form = document.createElement('form');
+    form.className = 'nav-search';
+    form.setAttribute('role', 'search');
+    form.action = '/search';
+    form.innerHTML = `
+      <span class="nav-search-icon" aria-hidden="true"></span>
+      <input type="search" name="q" class="nav-search-input" placeholder="Search the guide" aria-label="Search the guide" />`;
+    const wrapper = searchIcon ? searchIcon.closest('p') || searchIcon : navTools.firstElementChild;
+    if (wrapper) wrapper.replaceWith(form); else navTools.append(form);
+  }
+
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {

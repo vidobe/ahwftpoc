@@ -9,8 +9,9 @@
 
 .left-navigation {
   position: sticky;
-  top: calc(var(--nav-height) + 16px);
+  top: calc(var(--nav-height) + 32px);
   margin-left: 30px;
+  padding-top: 32px;
   padding-right: 40px;
   overflow: hidden auto;
   height: calc(100vh - var(--nav-height) - 32px);
@@ -18,7 +19,7 @@
 
 .left-navigation h4 {
   color: rgb(75 75 75);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -35,7 +36,7 @@
   display: block;
   float: none;
   font-family: var(--body-font-family);
-  font-size: 16px;
+  font-size: 14px;
   padding: 5px 10px;
   position: relative;
   text-align: left;
