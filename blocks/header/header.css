@@ -42,9 +42,10 @@ header nav[aria-expanded='true'] {
     align-items: center;
     justify-content: flex-start;
     gap: 0 32px;
-    max-width: 1264px;
+    max-width: none;
+    margin: 0;
     height: var(--nav-height);
-    padding: 0 32px;
+    padding: 0 30px;
   }
 
   header nav[aria-expanded='true'] {
@@ -283,7 +284,36 @@ header nav .nav-sections ul > li > ul > li {
   }
 }
 
-/* tools */
+/* tools — AH-style search pill */
 header nav .nav-tools {
   grid-area: tools;
+  margin-left: auto;
+}
+
+header nav .nav-tools p {
+  margin: 0;
+}
+
+header nav .nav-tools .icon-search {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 220px;
+  height: 40px;
+  padding: 0 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+header nav .nav-tools .icon-search:hover {
+  background-color: #e6e6e6;
+}
+
+header nav .nav-tools .icon-search img {
+  width: 18px;
+  height: 18px;
 }
