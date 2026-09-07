@@ -3,18 +3,19 @@
   min-width: 350px;
   max-width: 400px;
   width: auto;
-  background: #f8f8f8;
-  border-right: 1px solid lightgray;
+  align-self: stretch;
+  background: #fcfcfc;
+  border-right: 1px solid #ededed;
 }
 
 .left-navigation {
   position: sticky;
-  top: calc(var(--nav-height) + 32px);
+  top: var(--nav-height);
   margin-left: 30px;
   padding-top: 32px;
   padding-right: 40px;
   overflow: hidden auto;
-  height: calc(100vh - var(--nav-height) - 32px);
+  max-height: calc(100vh - var(--nav-height));
 }
 
 .left-navigation h4 {

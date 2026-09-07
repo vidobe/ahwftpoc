@@ -335,7 +335,7 @@ main > .section:first-of-type {
 /* two-column doc layout: left-navigation rail + content */
 main:has(.left-navigation-wrapper) {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 main:has(.left-navigation-wrapper) > .section {
