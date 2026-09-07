@@ -11,3 +11,6 @@ helix-importer-ui
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
+
+# DA-upload staging artifacts (intermediate, already uploaded to DA)
+.migration/da-upload/
