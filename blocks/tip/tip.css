@@ -12,23 +12,30 @@
 }
 
 /*
- * The imported markup decorates the bulb icon as a bare <picture><img>.
- * Constrain it to the intended 24px inline position instead of its natural 150px.
- * (The source's <span class="icon icon-bulb"> form is already handled by the
- * global .icon / .icon img rules in styles.css.)
+ * Label row (icon + "Quick Tip"): align the icon and label on one line,
+ * vertically centered, with a small gap. Works for both the decorated
+ * <span class="icon"> (live) and the bare <picture> (local) icon forms.
  */
-.tip picture {
-  display: inline-block;
-  position: relative;
-  top: 6px;
-  right: 10px;
-  width: 24px;
-  height: 24px;
-  margin: 0 0 17px 10px;
-  vertical-align: baseline;
+.tip > div:first-child p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 8px;
+  font-weight: 700;
 }
 
-.tip picture img {
+.tip picture,
+.tip .icon {
+  flex: 0 0 auto;
+  display: inline-flex;
   width: 24px;
   height: 24px;
+  margin: 0;
+}
+
+.tip picture img,
+.tip .icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
