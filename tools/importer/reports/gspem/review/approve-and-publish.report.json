@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/gspem/review/approve-and-publish",
+  "path": "gspem/review/approve-and-publish",
+  "timestamp": "2026-09-07T09:54:07.157Z",
+  "title": "Approval & Publishing",
+  "template": "chapter",
+  "blocks": [
+    "title",
+    "image",
+    "image",
+    "image",
+    "image",
+    "image"
+  ]
+}

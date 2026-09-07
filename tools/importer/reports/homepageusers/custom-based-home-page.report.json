@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/homepageusers/custom-based-home-page",
+  "path": "homepageusers/custom-based-home-page",
+  "timestamp": "2026-09-07T09:54:40.192Z",
+  "title": "Custom Based Home Page",
+  "template": "chapter",
+  "blocks": [
+    "title",
+    "note"
+  ]
+}

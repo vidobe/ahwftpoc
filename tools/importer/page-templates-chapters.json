@@ -1,0 +1,92 @@
+{
+  "templates": [
+    {
+      "name": "transcreationinworkfront",
+      "urls": [
+        "https://main--heineken--adobe-demopoc.aem.live/1homepage/configuring-layout-templates",
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/review/approve-and-publish",
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/review/brand-validation",
+        "https://main--heineken--adobe-demopoc.aem.live/homepage/custom-based-home-page",
+        "https://main--heineken--adobe-demopoc.aem.live/homepage/log-in-as",
+        "https://main--heineken--adobe-demopoc.aem.live/homepageusers/custom-based-home-page",
+        "https://main--heineken--adobe-demopoc.aem.live/homepageusers/workfront-standard-landing-page-experience",
+        "https://main--heineken--adobe-demopoc.aem.live/integratedplan/integrated-plan-steps",
+        "https://main--heineken--adobe-demopoc.aem.live/mediaandcreativeoptimizationandpca/media-and-creative-optimization-and-pca",
+        "https://main--heineken--adobe-demopoc.aem.live/operationalreporting/ai-project-health-check",
+        "https://main--heineken--adobe-demopoc.aem.live/operationalreporting/operational-dashboards",
+        "https://main--heineken--adobe-demopoc.aem.live/operationalreporting/operational-reporting-overview",
+        "https://main--heineken--adobe-demopoc.aem.live/transcreationinworkfront/key-visuals-firefly-variations",
+        "https://main--heineken--adobe-demopoc.aem.live/transcreationinworkfront/out-of-home-day-and-night-asset-variation",
+        "https://main--heineken--adobe-demopoc.aem.live/transcreationinworkfront/shelf-banner-translation-w-multi-formats-outputs",
+        "https://main--heineken--adobe-demopoc.aem.live/transcreationinworkfront/tv-ad-day-and-night-video-asset-variation",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningadministratorsetup/workfront-planning-administrator-setup-introduction",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningforbrandmanagers/1-year-comms-plan-briefing",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningforbrandmanagers/ai-form-fill",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningforbrandmanagers/brand-planning-output"
+      ],
+      "representativeUrl": "https://main--heineken--adobe-demopoc.aem.live/1homepage/configuring-layout-templates",
+      "description": "To be named in naming step",
+      "blocks": [],
+      "urlPattern": "/*"
+    },
+    {
+      "name": "workfrontplanningadministratorsetup",
+      "urls": [
+        "https://main--heineken--adobe-demopoc.aem.live/debrief/debrief-steps",
+        "https://main--heineken--adobe-demopoc.aem.live/transcreationinworkfront/introduction-transcreation-for-social-touchpoints",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningadministratorsetup/create-a-workspace",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningadministratorsetup/create-operational-record-types",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningadministratorsetup/create-persona-based-record-type-tables-and-timelines",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningadministratorsetup/create-taxonomies"
+      ],
+      "representativeUrl": "https://main--heineken--adobe-demopoc.aem.live/debrief/debrief-steps",
+      "description": "To be named in naming step",
+      "blocks": [],
+      "urlPattern": "/*"
+    },
+    {
+      "name": "gspem",
+      "urls": [
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/activation-and-insights/activation-to-social",
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/activation-and-insights/insights",
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/create/create-ad",
+        "https://main--heineken--adobe-demopoc.aem.live/homepage/workfront-standard-landing-page-experience",
+        "https://main--heineken--adobe-demopoc.aem.live/homepageusers/ai-assistant"
+      ],
+      "representativeUrl": "https://main--heineken--adobe-demopoc.aem.live/gspem/activation-and-insights/activation-to-social",
+      "description": "To be named in naming step",
+      "blocks": [],
+      "urlPattern": "/*"
+    },
+    {
+      "name": "create",
+      "urls": [
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/create/use-genai-features"
+      ],
+      "representativeUrl": "https://main--heineken--adobe-demopoc.aem.live/gspem/create/use-genai-features",
+      "description": "To be named in naming step",
+      "blocks": [],
+      "urlPattern": "/gspem/create/*"
+    },
+    {
+      "name": "gspem-2",
+      "urls": [
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/setup-optional"
+      ],
+      "representativeUrl": "https://main--heineken--adobe-demopoc.aem.live/gspem/setup-optional",
+      "description": "To be named in naming step",
+      "blocks": [],
+      "urlPattern": "/gspem/*"
+    },
+    {
+      "name": "overview",
+      "urls": [
+        "https://main--heineken--adobe-demopoc.aem.live/overview"
+      ],
+      "representativeUrl": "https://main--heineken--adobe-demopoc.aem.live/overview",
+      "description": "To be named in naming step",
+      "blocks": [],
+      "urlPattern": "/*"
+    }
+  ]
+}

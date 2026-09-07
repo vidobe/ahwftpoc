@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/mediaandcreativeoptimizationandpca/media-and-creative-optimization-and-pca",
+  "path": "mediaandcreativeoptimizationandpca/media-and-creative-optimization-and-pca",
+  "timestamp": "2026-09-07T09:54:53.849Z",
+  "title": "Media and Creative Optimization and PCA",
+  "template": "chapter",
+  "blocks": [
+    "title",
+    "note"
+  ]
+}

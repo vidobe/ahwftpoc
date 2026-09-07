@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/transcreationinworkfront/introduction-transcreation-for-social-touchpoints",
+  "path": "transcreationinworkfront/introduction-transcreation-for-social-touchpoints",
+  "timestamp": "2026-09-07T09:55:13.871Z",
+  "title": "Introduction Transcreation for Social Touchpoints",
+  "template": "chapter",
+  "blocks": [
+    "title",
+    "tip"
+  ]
+}

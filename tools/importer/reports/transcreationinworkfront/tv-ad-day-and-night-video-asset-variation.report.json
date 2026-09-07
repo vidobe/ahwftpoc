@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/transcreationinworkfront/tv-ad-day-and-night-video-asset-variation",
+  "path": "transcreationinworkfront/tv-ad-day-and-night-video-asset-variation",
+  "timestamp": "2026-09-07T09:55:34.009Z",
+  "title": "TV Ad Day and night video asset variation",
+  "template": "chapter",
+  "blocks": [
+    "title"
+  ]
+}

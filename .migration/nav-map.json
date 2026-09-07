@@ -1,0 +1,46 @@
+{
+  "content/overview": { "navTitle": "Overview", "navGroup": "", "navPosition": 1 },
+
+  "content/homepage/custom-based-home-page": { "navTitle": "Custom Based Home Page", "navGroup": "ADMIN - Home Page & Admin Tips", "navPosition": 10 },
+  "content/homepage/workfront-standard-landing-page-experience": { "navTitle": "Workfront Standard Home Page", "navGroup": "ADMIN - Home Page & Admin Tips", "navPosition": 20 },
+  "content/1homepage/configuring-layout-templates": { "navTitle": "Configuring Layout Templates", "navGroup": "ADMIN - Home Page & Admin Tips", "navPosition": 30 },
+  "content/homepage/log-in-as": { "navTitle": "Log In As", "navGroup": "ADMIN - Home Page & Admin Tips", "navPosition": 40 },
+
+  "content/workfrontplanningadministratorsetup/workfront-planning-administrator-setup-introduction": { "navTitle": "Workfront Planning Administrator Setup Intro", "navGroup": "ADMIN - Workfront Planning", "navPosition": 10 },
+  "content/workfrontplanningadministratorsetup/create-a-workspace": { "navTitle": "Create a Workspace", "navGroup": "ADMIN - Workfront Planning", "navPosition": 20 },
+  "content/workfrontplanningadministratorsetup/create-operational-record-types": { "navTitle": "Create Operational Record Types", "navGroup": "ADMIN - Workfront Planning", "navPosition": 30 },
+  "content/workfrontplanningadministratorsetup/create-taxonomies": { "navTitle": "Create Taxonomies", "navGroup": "ADMIN - Workfront Planning", "navPosition": 40 },
+  "content/workfrontplanningadministratorsetup/create-persona-based-record-type-tables-and-timelines": { "navTitle": "Create Persona-based Record Type Tables and Timelines", "navGroup": "ADMIN - Workfront Planning", "navPosition": 50 },
+
+  "content/homepageusers/custom-based-home-page": { "navTitle": "Custom Based Home Page", "navGroup": "USER - Home Page & User Tips", "navPosition": 10 },
+  "content/homepageusers/workfront-standard-landing-page-experience": { "navTitle": "Workfront Standard Home Page", "navGroup": "USER - Home Page & User Tips", "navPosition": 20 },
+  "content/homepageusers/ai-assistant": { "navTitle": "AI Assistant", "navGroup": "USER - Home Page & User Tips", "navPosition": 30 },
+
+  "content/workfrontplanningforbrandmanagers/brand-planning-output": { "navTitle": "Brand Planning output", "navGroup": "USER - Workfront Planning", "navPosition": 10 },
+  "content/workfrontplanningforbrandmanagers/1-year-comms-plan-briefing": { "navTitle": "1 Year Comms Plan", "navGroup": "USER - Workfront Planning", "navPosition": 20 },
+  "content/workfrontplanningforbrandmanagers/ai-form-fill": { "navTitle": "AI Form Fill", "navGroup": "USER - Workfront Planning", "navPosition": 30 },
+
+  "content/debrief/debrief-steps": { "navTitle": "Debrief Steps", "navGroup": "USER - Debrief Steps", "navPosition": 10 },
+
+  "content/integratedplan/integrated-plan-steps": { "navTitle": "Integrated Plan Steps", "navGroup": "USER - Integrated Plan", "navPosition": 10 },
+
+  "content/transcreationinworkfront/introduction-transcreation-for-social-touchpoints": { "navTitle": "Introduction - Transcreation for Social touchpoints", "navGroup": "USER - Transcreation in Workfront", "navPosition": 10 },
+  "content/transcreationinworkfront/shelf-banner-translation-w-multi-formats-outputs": { "navTitle": "Shelf banner translation and multi-formats outputs", "navGroup": "USER - Transcreation in Workfront", "navPosition": 20 },
+  "content/transcreationinworkfront/key-visuals-firefly-variations": { "navTitle": "Key Visuals Firefly variations and AI Asset Reviewer", "navGroup": "USER - Transcreation in Workfront", "navPosition": 30 },
+  "content/transcreationinworkfront/out-of-home-day-and-night-asset-variation": { "navTitle": "Out of Home day and night still asset variation", "navGroup": "USER - Transcreation in Workfront", "navPosition": 40 },
+  "content/transcreationinworkfront/tv-ad-day-and-night-video-asset-variation": { "navTitle": "TV Ad Day and night video asset variation", "navGroup": "USER - Transcreation in Workfront", "navPosition": 50 },
+
+  "content/mediaandcreativeoptimizationandpca/media-and-creative-optimization-and-pca": { "navTitle": "Media and Creative Optimization and PCA", "navGroup": "USER - Media and Creative Optimization and PCA", "navPosition": 10 },
+
+  "content/operationalreporting/operational-reporting-overview": { "navTitle": "Overview", "navGroup": "USER - Operational Reporting", "navPosition": 10 },
+  "content/operationalreporting/ai-project-health-check": { "navTitle": "AI Project Health Check", "navGroup": "USER - Operational Reporting", "navPosition": 20 },
+  "content/operationalreporting/operational-dashboards": { "navTitle": "Operational Dashboards", "navGroup": "USER - Operational Reporting", "navPosition": 30 },
+
+  "content/gspem/create/create-ad": { "navTitle": "Create Ads", "navGroup": "USER - Genstudio for PeM: Create", "navPosition": 10 },
+  "content/gspem/create/use-genai-features": { "navTitle": "Use Gen-AI Features", "navGroup": "USER - Genstudio for PeM: Create", "navPosition": 20 },
+  "content/gspem/review/brand-validation": { "navTitle": "Brand Validation", "navGroup": "USER - Genstudio for PeM: Review", "navPosition": 10 },
+  "content/gspem/review/approve-and-publish": { "navTitle": "Approve and Publish", "navGroup": "USER - Genstudio for PeM: Review", "navPosition": 20 },
+  "content/gspem/activation-and-insights/activation-to-social": { "navTitle": "Activation to Social", "navGroup": "USER - Genstudio for PeM: Activation & Insights", "navPosition": 10 },
+  "content/gspem/activation-and-insights/insights": { "navTitle": "Insights", "navGroup": "USER - Genstudio for PeM: Activation & Insights", "navPosition": 20 },
+  "content/gspem/setup-optional": { "navTitle": "How to Setup", "navGroup": "USER - Genstudio for PeM: Setup (Optional)", "navPosition": 10 }
+}

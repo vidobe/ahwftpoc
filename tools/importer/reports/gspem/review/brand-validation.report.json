@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/gspem/review/brand-validation",
+  "path": "gspem/review/brand-validation",
+  "timestamp": "2026-09-07T09:54:12.190Z",
+  "title": "Brand Validation",
+  "template": "chapter",
+  "blocks": [
+    "title",
+    "note",
+    "image",
+    "image",
+    "image",
+    "image",
+    "image"
+  ]
+}

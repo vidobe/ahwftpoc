@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/homepageusers/ai-assistant",
+  "path": "homepageusers/ai-assistant",
+  "timestamp": "2026-09-07T09:54:35.015Z",
+  "title": "AI Assistant",
+  "template": "chapter",
+  "blocks": [
+    "title",
+    "note"
+  ]
+}

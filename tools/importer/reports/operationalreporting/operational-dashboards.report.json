@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/operationalreporting/operational-dashboards",
+  "path": "operationalreporting/operational-dashboards",
+  "timestamp": "2026-09-07T09:55:03.588Z",
+  "title": "Operational Dashboards",
+  "template": "chapter",
+  "blocks": [
+    "title",
+    "tip",
+    "image",
+    "image",
+    "image",
+    "image",
+    "image"
+  ]
+}

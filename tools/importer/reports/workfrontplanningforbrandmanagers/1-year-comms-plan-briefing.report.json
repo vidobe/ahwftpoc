@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningforbrandmanagers/1-year-comms-plan-briefing",
+  "path": "workfrontplanningforbrandmanagers/1-year-comms-plan-briefing",
+  "timestamp": "2026-09-07T09:56:01.411Z",
+  "title": "1 Year Comms Plan",
+  "template": "chapter",
+  "blocks": [
+    "title",
+    "note",
+    "note",
+    "note",
+    "note"
+  ]
+}

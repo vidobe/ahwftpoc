@@ -1,0 +1,40 @@
+/*
+ * Image block: a responsive picture sized by an optional width variant
+ * (e.g. `image width-60percent`). Ported from the source doc site.
+ */
+.image {
+  height: auto;
+  object-fit: cover;
+}
+
+.image.width-10percent { width: 10%; }
+.image.width-20percent { width: 20%; }
+.image.width-30percent { width: 30%; }
+.image.width-40percent { width: 40%; }
+.image.width-50percent { width: 50%; }
+.image.width-60percent { width: 60%; }
+.image.width-70percent { width: 70%; }
+.image.width-80percent { width: 80%; }
+.image.width-90percent { width: 90%; }
+.image.width-100percent { width: 100%; }
+
+.image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (width <= 900px) {
+  .image.width-10percent,
+  .image.width-20percent,
+  .image.width-30percent,
+  .image.width-40percent,
+  .image.width-50percent,
+  .image.width-60percent,
+  .image.width-70percent,
+  .image.width-80percent,
+  .image.width-90percent,
+  .image.width-100percent {
+    width: 100%;
+  }
+}

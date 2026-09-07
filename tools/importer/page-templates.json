@@ -4,18 +4,51 @@
   },
   "templates": [
     {
-      "name": "overview",
+      "name": "chapter",
       "urls": [
-        "https://main--heineken--adobe-demopoc.aem.live/overview"
+        "https://main--heineken--adobe-demopoc.aem.live/1homepage/configuring-layout-templates",
+        "https://main--heineken--adobe-demopoc.aem.live/debrief/debrief-steps",
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/activation-and-insights/activation-to-social",
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/activation-and-insights/insights",
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/create/create-ad",
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/create/use-genai-features",
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/review/approve-and-publish",
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/review/brand-validation",
+        "https://main--heineken--adobe-demopoc.aem.live/gspem/setup-optional",
+        "https://main--heineken--adobe-demopoc.aem.live/homepage/custom-based-home-page",
+        "https://main--heineken--adobe-demopoc.aem.live/homepage/log-in-as",
+        "https://main--heineken--adobe-demopoc.aem.live/homepage/workfront-standard-landing-page-experience",
+        "https://main--heineken--adobe-demopoc.aem.live/homepageusers/ai-assistant",
+        "https://main--heineken--adobe-demopoc.aem.live/homepageusers/custom-based-home-page",
+        "https://main--heineken--adobe-demopoc.aem.live/homepageusers/workfront-standard-landing-page-experience",
+        "https://main--heineken--adobe-demopoc.aem.live/integratedplan/integrated-plan-steps",
+        "https://main--heineken--adobe-demopoc.aem.live/mediaandcreativeoptimizationandpca/media-and-creative-optimization-and-pca",
+        "https://main--heineken--adobe-demopoc.aem.live/operationalreporting/ai-project-health-check",
+        "https://main--heineken--adobe-demopoc.aem.live/operationalreporting/operational-dashboards",
+        "https://main--heineken--adobe-demopoc.aem.live/operationalreporting/operational-reporting-overview",
+        "https://main--heineken--adobe-demopoc.aem.live/overview",
+        "https://main--heineken--adobe-demopoc.aem.live/transcreationinworkfront/introduction-transcreation-for-social-touchpoints",
+        "https://main--heineken--adobe-demopoc.aem.live/transcreationinworkfront/key-visuals-firefly-variations",
+        "https://main--heineken--adobe-demopoc.aem.live/transcreationinworkfront/out-of-home-day-and-night-asset-variation",
+        "https://main--heineken--adobe-demopoc.aem.live/transcreationinworkfront/shelf-banner-translation-w-multi-formats-outputs",
+        "https://main--heineken--adobe-demopoc.aem.live/transcreationinworkfront/tv-ad-day-and-night-video-asset-variation",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningadministratorsetup/create-a-workspace",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningadministratorsetup/create-operational-record-types",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningadministratorsetup/create-persona-based-record-type-tables-and-timelines",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningadministratorsetup/create-taxonomies",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningadministratorsetup/workfront-planning-administrator-setup-introduction",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningforbrandmanagers/1-year-comms-plan-briefing",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningforbrandmanagers/ai-form-fill",
+        "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningforbrandmanagers/brand-planning-output"
       ],
-      "representativeUrl": "https://main--heineken--adobe-demopoc.aem.live/overview",
-      "description": "AEM Edge Delivery documentation guide page: page heading, intro title block, body copy with feature list, Quick Tip callout, Prerequisites, and a Note callout.",
+      "representativeUrl": "https://main--heineken--adobe-demopoc.aem.live/gspem/create/use-genai-features",
+      "description": "Workfront/GenStudio documentation chapter page: title intro, body copy, images, callouts (tip/note), and optional code snippets.",
       "urlPattern": "/*",
       "blocks": [
         {
           "name": "title",
           "instances": [
-            ".title.heading-3"
+            ".title"
           ]
         },
         {
@@ -29,23 +62,39 @@
           "instances": [
             ".note"
           ]
+        },
+        {
+          "name": "image",
+          "instances": [
+            ".image"
+          ]
+        },
+        {
+          "name": "code",
+          "instances": [
+            ".code"
+          ]
         }
       ],
       "sections": [
         {
           "id": "section-1",
-          "name": "Overview content",
+          "name": "Chapter content",
           "selector": "body > main",
           "style": null,
           "blocks": [
             "title",
             "tip",
-            "note"
+            "note",
+            "image",
+            "code"
           ],
           "defaultContent": [
-            "h1#overview",
+            "h1",
+            "h2",
             "ul",
-            "h3#prerequisites"
+            "ol",
+            "p"
           ]
         }
       ]

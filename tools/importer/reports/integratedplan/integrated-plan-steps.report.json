@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/integratedplan/integrated-plan-steps",
+  "path": "integratedplan/integrated-plan-steps",
+  "timestamp": "2026-09-07T09:54:49.594Z",
+  "title": "Integrated Plan",
+  "template": "chapter",
+  "blocks": [
+    "title",
+    "note",
+    "note",
+    "note",
+    "note"
+  ]
+}

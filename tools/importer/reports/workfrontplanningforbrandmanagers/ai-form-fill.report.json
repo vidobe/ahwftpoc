@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningforbrandmanagers/ai-form-fill",
+  "path": "workfrontplanningforbrandmanagers/ai-form-fill",
+  "timestamp": "2026-09-07T09:56:06.251Z",
+  "title": "AI Form Filling",
+  "template": "chapter",
+  "blocks": [
+    "title",
+    "note",
+    "note",
+    "note",
+    "note",
+    "note",
+    "note"
+  ]
+}

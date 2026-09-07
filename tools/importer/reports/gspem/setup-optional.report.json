@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/gspem/setup-optional",
+  "path": "gspem/setup-optional",
+  "timestamp": "2026-09-07T09:54:15.890Z",
+  "title": "Brand Guidelines",
+  "template": "chapter",
+  "blocks": [
+    "tip",
+    "image",
+    "image",
+    "image",
+    "image",
+    "image",
+    "image",
+    "image",
+    "image",
+    "image",
+    "image",
+    "image"
+  ]
+}

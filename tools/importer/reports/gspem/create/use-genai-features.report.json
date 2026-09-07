@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/gspem/create/use-genai-features",
+  "path": "gspem/create/use-genai-features",
+  "timestamp": "2026-09-07T09:54:01.740Z",
+  "title": "Using GenAI for Adjustments",
+  "template": "chapter",
+  "blocks": [
+    "title",
+    "tip",
+    "image",
+    "image",
+    "image",
+    "image",
+    "image"
+  ]
+}

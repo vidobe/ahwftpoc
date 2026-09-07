@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://main--heineken--adobe-demopoc.aem.live/workfrontplanningadministratorsetup/workfront-planning-administrator-setup-introduction",
+  "path": "workfrontplanningadministratorsetup/workfront-planning-administrator-setup-introduction",
+  "timestamp": "2026-09-07T09:55:56.580Z",
+  "title": "administrator setup introduction",
+  "template": "chapter",
+  "blocks": [
+    "title"
+  ]
+}
