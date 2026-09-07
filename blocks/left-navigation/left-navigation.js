@@ -27,29 +27,6 @@ function firstValue(row, keys) {
 }
 
 /**
- * Returns the correct caret icon path based on direction and theme.
- * @param {'down'|'right'} direction
- */
-function getCaretIcon(direction) {
-  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-  if (direction === 'down') {
-    return isDark ? '/icons/icon-caret-down-white.svg' : '/icons/icon-caret-down.svg';
-  }
-  return isDark ? '/icons/icon-caret-right-white.svg' : '/icons/icon-caret-right.svg';
-}
-
-function updateAllCarets() {
-  // Update all carets in the left navigation based on the current theme
-  document.querySelectorAll('.left-navigation img').forEach((img) => {
-    if (img.src.includes('caret-down')) {
-      img.src = getCaretIcon('down');
-    } else if (img.src.includes('caret-right')) {
-      img.src = getCaretIcon('right');
-    }
-  });
-}
-
-/**
  * Fetch every row from the query-index, following pagination.
  * @param {string} indexPath
  * @returns {Promise<Array<object>>}
@@ -149,6 +126,15 @@ function render(block, groups) {
   topics.textContent = 'TOPICS';
   root.append(topics);
 
+  // "Expand all sections" toggle
+  const toggle = document.createElement('label');
+  toggle.className = 'nav-expand-toggle';
+  toggle.innerHTML = `
+    <input type="checkbox" class="nav-expand-checkbox" />
+    <span class="nav-expand-switch" aria-hidden="true"></span>
+    <span class="nav-expand-label">Expand all sections</span>`;
+  root.append(toggle);
+
   // Ungrouped pages render as a flat list directly under TOPICS.
   const ungrouped = groups.find((g) => g.group === '');
   if (ungrouped) {
@@ -163,10 +149,11 @@ function render(block, groups) {
     const innerInner = document.createElement('div');
 
     grouped.forEach(({ group, items }) => {
+      // Group header — the CSS renders a chevron on the right via ::after.
       const p = document.createElement('p');
-      const caret = document.createElement('span');
-      caret.className = 'icon icon-caret-right';
-      p.append(caret, document.createTextNode(group));
+      p.className = 'nav-group-header';
+      p.setAttribute('aria-expanded', 'false');
+      p.textContent = group;
       innerInner.append(p);
       innerInner.append(linkList(items));
     });
@@ -179,25 +166,42 @@ function render(block, groups) {
   block.replaceChildren(root);
 }
 
+function setExpanded(header, expanded) {
+  header.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  const list = header.nextElementSibling;
+  if (list && list.tagName === 'UL') {
+    list.style.display = expanded ? 'block' : 'none';
+  }
+}
+
+// Keep the toggle in sync: checked only when every group is expanded.
+function syncExpandToggle() {
+  const checkbox = document.querySelector('.left-navigation .nav-expand-checkbox');
+  if (!checkbox) return;
+  const headers = [...document.querySelectorAll('.left-navigation .nav-group-header')];
+  checkbox.checked = headers.length > 0
+    && headers.every((h) => h.getAttribute('aria-expanded') === 'true');
+}
+
 function loadDropdowns() {
-  const paragraphs = document.querySelectorAll('.left-navigation p');
-  paragraphs.forEach((paragraph) => {
-    paragraph.addEventListener('click', function toggleDropdown() {
-      const dropdown = this.nextElementSibling;
-      if (dropdown && dropdown.tagName === 'UL') {
-        // Toggle showing/hiding the dropdown
-        if (dropdown.style.display === 'none' || dropdown.style.display === '') {
-          dropdown.style.display = 'block';
-          const img = paragraph.querySelector('img');
-          if (img) img.src = getCaretIcon('down');
-        } else {
-          dropdown.style.display = 'none';
-          const img = paragraph.querySelector('img');
-          if (img) img.src = getCaretIcon('right');
-        }
-      }
+  const headers = document.querySelectorAll('.left-navigation .nav-group-header');
+  headers.forEach((header) => {
+    setExpanded(header, false); // collapsed by default
+    header.addEventListener('click', () => {
+      const expanded = header.getAttribute('aria-expanded') === 'true';
+      setExpanded(header, !expanded);
+      syncExpandToggle();
     });
   });
+
+  // "Expand all sections" toggle
+  const checkbox = document.querySelector('.left-navigation .nav-expand-checkbox');
+  if (checkbox) {
+    checkbox.addEventListener('change', () => {
+      document.querySelectorAll('.left-navigation .nav-group-header')
+        .forEach((h) => setExpanded(h, checkbox.checked));
+    });
+  }
 }
 
 function loadActiveLinks() {
@@ -208,13 +212,13 @@ function loadActiveLinks() {
     link.classList.add('active');
   });
 
-  // Find the parent container of the active link and show its dropdown
+  // Expand the group containing the active link and scroll it into view.
   const activeContainer = document.querySelector('.active')?.closest('ul');
   if (activeContainer) {
-    const activeParagraph = activeContainer.previousElementSibling;
-    const dropdownIcon = activeParagraph?.querySelector('img');
-    if (dropdownIcon) {
-      dropdownIcon.src = getCaretIcon('down');
+    const header = activeContainer.previousElementSibling;
+    if (header && header.classList.contains('nav-group-header')) {
+      setExpanded(header, true);
+      syncExpandToggle();
     }
     activeContainer.style.display = 'block';
     setTimeout(() => {
@@ -222,12 +226,6 @@ function loadActiveLinks() {
     }, 100);
   }
 }
-
-// Listen for theme changes and update carets
-const observer = new MutationObserver(() => {
-  updateAllCarets();
-});
-observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
 export default async function decorate(block) {
   const indexPath = DEFAULT_INDEX_PATH;
@@ -242,5 +240,4 @@ export default async function decorate(block) {
   decorateIcons(block);
   loadDropdowns();
   loadActiveLinks();
-  updateAllCarets(); // Ensure correct icons on initial load
 }

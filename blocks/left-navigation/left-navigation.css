@@ -26,6 +26,64 @@
   margin: 0 0 12px;
 }
 
+/* "Expand all sections" toggle */
+.left-navigation .nav-expand-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 20px 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-navigation .nav-expand-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.left-navigation .nav-expand-switch {
+  position: relative;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 22px;
+  border-radius: 11px;
+  background-color: #d4d4d4;
+  transition: background-color 0.2s ease;
+}
+
+.left-navigation .nav-expand-switch::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 25%);
+  transition: transform 0.2s ease;
+}
+
+.left-navigation .nav-expand-checkbox:checked + .nav-expand-switch {
+  background-color: var(--ah-orange);
+}
+
+.left-navigation .nav-expand-checkbox:checked + .nav-expand-switch::before {
+  transform: translateX(18px);
+}
+
+.left-navigation .nav-expand-checkbox:focus-visible + .nav-expand-switch {
+  outline: 2px solid var(--ah-blue);
+  outline-offset: 2px;
+}
+
+.left-navigation .nav-expand-label {
+  font-size: 14px;
+  color: #26313a;
+}
+
 .left-navigation p,
 .left-navigation li,
 .left-navigation li a,
@@ -92,10 +150,35 @@
   color: #fff;
 }
 
-.left-navigation img {
-  position: relative;
-  top: 6px;
-  right: 23px;
+/* group header with a chevron on the right */
+.left-navigation .nav-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 10px;
+  left: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 13px;
+  color: #26313a;
+}
+
+.left-navigation .nav-group-header::after {
+  content: '';
+  flex: 0 0 auto;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #6b7280;
+  border-bottom: 2px solid #6b7280;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+  margin-right: 4px;
+}
+
+.left-navigation .nav-group-header[aria-expanded="true"]::after {
+  transform: rotate(-135deg);
 }
 
 .nav-heading ul {
