@@ -33,6 +33,7 @@ header nav[aria-expanded='true'] {
 @media (width >= 900px) {
   header .nav-wrapper {
     position: relative;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   header nav {
@@ -151,9 +152,22 @@ header .nav-brand {
   line-height: 1;
 }
 
+/* logos side by side (Adobe + AH) */
+header .nav-brand .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header .nav-brand p {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
 header nav .nav-brand img {
   width: auto;
-  height: 40px;
+  height: 36px;
 }
 
 /* sections */
